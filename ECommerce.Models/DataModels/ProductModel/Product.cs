@@ -11,7 +11,8 @@ namespace ECommerce.Models.DataModels.ProductModel
         [Required]
         public decimal? Price { get; set; }
         public string? Description { get; set; }
+        public string? ImagePaths { get; set; }
         public string? CategoryId { get; set; }
-        public Category? Category { get; set; }
+        public virtual Category? Category { get; set; }
     }
 }

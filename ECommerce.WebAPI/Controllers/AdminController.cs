@@ -1,5 +1,4 @@
 ﻿using ECommerce.Models.DataModels.AuthDataModels;
-using ECommerce.Models.DataModels.InfoModel;
 using ECommerce.Models.InputModelsDTO.AuthInputModelsDTO;
 using ECommerce.Models.InputModelsDTO.AuthOutputModelDTO;
 using ECommerce.Models.ResponseModel;
@@ -165,7 +164,7 @@ namespace ECommerce.WebAPI.Controllers
                     return Ok(getAllUsersResponse);
                 }
 
-                return Ok(getAllUsersResponse.Value);
+                return Ok(getAllUsersResponse);
             }
             catch (Exception ex)
             {
